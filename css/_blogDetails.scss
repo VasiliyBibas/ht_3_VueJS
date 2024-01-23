@@ -1,0 +1,163 @@
+@import 'variables';
+
+
+.banner-topBlogDetails {
+	background-image: url('../img/details_photo.jpg');
+}
+
+.main-block {
+	display: flex;
+	justify-content: space-between;
+	gap: 52px;
+	margin-top: 210px;
+}
+
+.articles-details {
+	max-width: 804px;
+
+	&__title {
+		font-family: $SecondFontText;
+		font-size: 50px;
+		line-height: 125%;
+		letter-spacing: 1px;
+	}
+
+	&__img {
+		border-radius: 50px;
+    max-width: 799px;
+    width: 100%;
+		margin-top: 21px;
+	}
+
+	&__date-block {
+		display: flex;
+    justify-content: space-between;
+    align-items: center;
+		margin-top: 46px;
+	}
+
+
+	&__date {
+		color: $secondColorText;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.16px;
+		text-transform: capitalize;
+	}
+
+	&__breadcrambs {
+		list-style: none;
+		width: 249px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	}
+
+	&__items {
+		color: $secondColorText;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.16px;
+		text-transform: capitalize;
+
+		&:not(:last-child)::after {
+			padding: 0 6px;
+			content: "/";
+		}
+
+		&>a {
+			color: inherit;
+		}
+
+		&>a:hover {
+			color: #CDA274;
+		}
+
+		&>a:active {
+			color: brown;
+		}
+	}
+
+	&__text {
+		color: $secondColorText;
+		line-height: 150%;
+		letter-spacing: 0.22px;
+		margin-top: 48px;
+
+	}
+
+	&__statement {
+		display: flex;
+    max-width: 799px;
+    min-height: 267px;
+    border-radius: 50px;
+    background: #F4F0EC;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		margin-top: 35px;
+	}
+
+	&__statement-text {
+		color: #CDA274;
+		text-align: center;
+		font-family: $SecondFontText;
+		font-size: 25px;
+		font-style: italic;
+		line-height: 125%;
+		letter-spacing: 0.5px;
+		width: 351px;
+    box-sizing: border-box;
+		margin-top: 10px;
+	}
+
+
+
+}
+
+.tags {
+	max-width: 345px;
+
+	&__title {
+		font-family: $SecondFontText;
+		font-size: 25px;
+		line-height: 125%;
+		letter-spacing: 0.5px;
+	}
+
+	&__ul {
+		list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 21px;
+    margin-top: 24px;
+	}
+
+	&__item {
+		color: $colorText;
+		text-align: center;
+		font-size: 18px;
+		line-height: 125%;
+		letter-spacing: 0.36px;
+		border-radius: 10px;
+		background: #F4F0EC;
+		padding: 9px 30px;
+
+		&_select {
+			background: #292F36;
+			color: #FFF;
+		}
+
+		&:hover {
+			outline: 1px solid grey;
+		}
+		&:active {
+			outline: 1px solid brown;
+		}
+	}
+
+
+}
